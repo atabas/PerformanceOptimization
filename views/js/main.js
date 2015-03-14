@@ -312,7 +312,6 @@ var pizzaElementGenerator = function(i) {
 };
 
 //THIS IS THE NEWEST CHANGE I AM MAKING
-var pizzaz = document.querySelectorAll(".randomPizzaContainer");
 var randomPizzasSelector = document.querySelector("#randomPizzas")
 
 // resizePizzas(size) is called when the slider in the "Our Pizzas" section of the website moves.
@@ -371,8 +370,9 @@ var resizePizzas = function(size) {
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
     //moving vriables out of the loop; storing pizzaz variabl and reusing it
-    var dx = determineDx(pizzaz[i], size);
-    var newwidth = (pizzaz[i].offsetWidth + dx) + 'px';
+    var dx = determineDx(document.querySelector(".randomPizzaContainer"), size)
+    var newwidth = (document.querySelector(".randomPizzaContainer").offsetWidth + dx) + 'px';
+    var pizzaz = document.querySelectorAll(".randomPizzaContainer");
     for (var i = pizzaz.length; i--;) {
     
       pizzaz[i].style.width = newwidth;
