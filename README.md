@@ -1,9 +1,9 @@
 ## Website Performance Optimization portfolio project
 
-Time to resize pizzas [DONE]: 0.9ms (less than 5ms )
-Critical rendering path for index.html: should get PageSpeed score >= 90
-Framerate for pizza.html: should be 60fps
-Comments in main.js
+- Time to resize pizzas [DONE]: 0.9ms (less than 5ms )
+- Critical rendering path for index.html: should get PageSpeed score >= 90
+- Framerate for pizza.html: should be 60fps
+- Comments in main.js
 
 ### Getting started
 Some useful tips to help you get started:
