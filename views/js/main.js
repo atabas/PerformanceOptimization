@@ -20,126 +20,40 @@ cameron *at* udacity *dot* com
 // Here are arrays of all possible pizza ingredients.
 var pizzaIngredients = {};
 pizzaIngredients.meats = [
-  "Pepperoni",
-  "Sausage",
-  "Fennel Sausage",
-  "Spicy Sausage",
-  "Chicken",
-  "BBQ Chicken",
-  "Chorizo",
-  "Chicken Andouille",
-  "Salami",
-  "Tofu",
-  "Bacon",
-  "Canadian Bacon",
-  "Proscuitto",
-  "Italian Sausage",
-  "Ground Beef",
-  "Anchovies",
-  "Turkey",
-  "Ham",
-  "Venison",
-  "Lamb",
-  "Duck",
-  "Soylent Green",
-  "Carne Asada",
-  "Soppressata Picante",
-  "Coppa",
-  "Pancetta",
-  "Bresola",
-  "Lox",
-  "Guanciale",
-  "Chili",
-  "Beef Jerky",
-  "Pastrami",
-  "Kielbasa",
-  "Scallops",
-  "Filet Mignon"
+  "Pepperoni", "Sausage", "Fennel Sausage", "Spicy Sausage", "Chicken", 
+  "BBQ Chicken", "Chorizo", "Chicken Andouille", "Salami", "Tofu", "Bacon",
+  "Canadian Bacon", "Proscuitto", "Italian Sausage", "Ground Beef",
+  "Anchovies", "Turkey", "Ham", "Venison", "Lamb", "Duck",
+  "Soylent Green", "Carne Asada", "Soppressata Picante", "Coppa",
+  "Pancetta", "Bresola", "Lox", "Guanciale", "Chili",
+  "Beef Jerky", "Pastrami", "Kielbasa", "Scallops", "Filet Mignon"
 ];
 pizzaIngredients.nonMeats = [
-  "White Onions",
-  "Red Onions",
-  "Sauteed Onions",
-  "Green Peppers",
-  "Red Peppers",
-  "Banana Peppers",
-  "Ghost Peppers",
-  "Habanero Peppers",
-  "Jalapeno Peppers",
-  "Stuffed Peppers",
-  "Spinach",
-  "Tomatoes",
-  "Pineapple",
-  "Pear Slices",
-  "Apple Slices",
-  "Mushrooms",
-  "Arugula",
-  "Basil",
-  "Fennel",
-  "Rosemary",
-  "Cilantro",
-  "Avocado",
-  "Guacamole",
-  "Salsa",
-  "Swiss Chard",
-  "Kale",
-  "Sun Dried Tomatoes",
-  "Walnuts",
-  "Artichoke",
-  "Asparagus",
-  "Caramelized Onions",
-  "Mango",
-  "Garlic",
-  "Olives",
-  "Cauliflower",
-  "Polenta",
-  "Fried Egg",
-  "Zucchini",
-  "Hummus"
+  "White Onions", "Red Onions", "Sauteed Onions", "Green Peppers",
+  "Red Peppers", "Banana Peppers", "Ghost Peppers", "Habanero Peppers",
+  "Jalapeno Peppers", "Stuffed Peppers", "Spinach","Tomatoes",
+  "Pineapple", "Pear Slices", "Apple Slices", "Mushrooms",
+  "Arugula", "Basil", "Fennel", "Rosemary", "Cilantro", "Avocado",
+  "Guacamole", "Salsa", "Swiss Chard", "Kale",
+  "Sun Dried Tomatoes", "Walnuts","Artichoke", "Asparagus", 
+  "Caramelized Onions", "Mango", "Garlic", "Olives", "Cauliflower",
+  "Polenta", "Fried Egg", "Zucchini", "Hummus"
 ];
 pizzaIngredients.cheeses = [
-  "American Cheese",
-  "Swiss Cheese",
-  "Goat Cheese",
-  "Mozzarella Cheese",
-  "Parmesean Cheese",
-  "Velveeta Cheese",
-  "Gouda Cheese",
-  "Muenster Cheese",
-  "Applewood Cheese",
-  "Asiago Cheese",
-  "Bleu Cheese",
-  "Boursin Cheese",
-  "Brie Cheese",
-  "Cheddar Cheese",
-  "Chevre Cheese",
-  "Havarti Cheese",
-  "Jack Cheese",
-  "Pepper Jack Cheese",
-  "Gruyere Cheese",
-  "Limberger Cheese",
-  "Manchego Cheese",
-  "Marscapone Cheese",
-  "Pecorino Cheese",
-  "Provolone Cheese",
-  "Queso Cheese",
-  "Roquefort Cheese",
-  "Romano Cheese",
-  "Ricotta Cheese",
+  "American Cheese", "Swiss Cheese", "Goat Cheese", "Mozzarella Cheese",
+  "Parmesean Cheese", "Velveeta Cheese", "Gouda Cheese", "Muenster Cheese",
+  "Applewood Cheese", "Asiago Cheese", "Bleu Cheese", "Boursin Cheese",
+  "Brie Cheese", "Cheddar Cheese", "Chevre Cheese", "Havarti Cheese",
+  "Jack Cheese", "Pepper Jack Cheese", "Gruyere Cheese", "Limberger Cheese",
+  "Manchego Cheese", "Marscapone Cheese", "Pecorino Cheese", "Provolone Cheese",
+  "Queso Cheese", "Roquefort Cheese", "Romano Cheese", "Ricotta Cheese",
   "Smoked Gouda"
 ];
 pizzaIngredients.sauces = [
-  "Red Sauce",
-  "Marinara",
-  "BBQ Sauce",
-  "No Sauce",
-  "Hot Sauce"
+  "Red Sauce", "Marinara", "BBQ Sauce", "No Sauce", "Hot Sauce"
 ];
 pizzaIngredients.crusts = [
-  "White Crust",
-  "Whole Wheat Crust",
-  "Flatbread Crust",
-  "Stuffed Crust"
+  "White Crust", "Whole Wheat Crust", "Flatbread Crust", "Stuffed Crust"
 ];
 
 // Name generator pulled from http://saturdaykid.com/usernames/generator.html
@@ -282,7 +196,7 @@ function getNoun(y) {
   } 
 }
 
-var adjectives = ["dark", "color", "whimsical", "shiny", "noise", "apocalyptic", "insulting", "praise", "scientific"];  // types of adjectives for pizza titles
+var adjectives = ["dark", "color", "whimsical", "shiny", "noisy", "apocalyptic", "insulting", "praise", "scientific"];  // types of adjectives for pizza titles
 var nouns = ["animals", "everyday", "fantasy", "gross", "horror", "jewelry", "places", "scifi"];                        // types of nouns for pizza titles
 
 // Generates random numbers for getAdj and getNoun functions and returns a new pizza name
@@ -383,7 +297,6 @@ var pizzaElementGenerator = function(i) {
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
 
-
   pizzaDescriptionContainer.classList.add("col-md-6");
 
   pizzaName = document.createElement("h4");
@@ -398,21 +311,26 @@ var pizzaElementGenerator = function(i) {
   return pizzaContainer;
 };
 
+//THIS IS THE NEWEST CHANGE I AM MAKING
+var pizzaz = document.querySelectorAll(".randomPizzaContainer");
+
 // resizePizzas(size) is called when the slider in the "Our Pizzas" section of the website moves.
 var resizePizzas = function(size) { 
   window.performance.mark("mark_start_resize");   // User Timing API function
 
   // Changes the value for the size of the pizza above the slider
+  var selectSize = document.querySelector("#pizzaSize");
+  
   function changeSliderLabel(size) {
     switch(size) {
       case "1":
-        document.querySelector("#pizzaSize").innerHTML = "Small";
+        selectSize.innerHTML = "Small";
         return;
       case "2":
-        document.querySelector("#pizzaSize").innerHTML = "Medium";
+        selectSize.innerHTML = "Medium";
         return;
       case "3":
-        document.querySelector("#pizzaSize").innerHTML = "Large";
+        selectSize.innerHTML = "Large";
         return;
       default:
         console.log("bug in changeSliderLabel");
@@ -450,10 +368,12 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+
+    var dx = determineDx(pizzaz[i], size);
+    var newwidth = (pizzaz[i].offsetWidth + dx) + 'px';
+    for (var i = pizzaz.length; i--;) {
+    
+      pizzaz[i].style.width = newwidth;
     }
   }
 
@@ -501,10 +421,10 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
+  var scrollTop = document.body.scrollTop;
 
-  var items = document.querySelectorAll('.mover');
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = Math.sin((scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -535,5 +455,6 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
+  items = document.querySelectorAll('.mover');
   updatePositions();
 });
