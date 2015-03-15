@@ -1,9 +1,22 @@
 ## Website Performance Optimization portfolio project
 
 - Time to resize pizzas [DONE]: 0.9ms (less than 5ms )
-- Critical rendering path for index.html: should get PageSpeed score >= 90
+- Critical rendering path for index.html [DONE]:PageSpeed score (mobile: 95, desktop: 96) >= 90
 - Framerate for pizza.html: should be 60fps
 - Comments in main.js
+
+### Optimizations for pagespeed (index.html):
+- Compressed images
+- Inline CSS instead of style.css
+- Used async for analytics and perfmatters.js; moved google analytics code to perfmatters.js
+- Used media query for print.css so that it doesn't have to load except when printing
+
+### Optimizations for FPS :
+
+
+### Resources used:
+- http://compressjpeg.com/
+- Pagespeed Insights
 
 ### Getting started
 Some useful tips to help you get started:
