@@ -437,10 +437,11 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
   var items = document.querySelectorAll('.mover');
+  var leng = items.length;
   var scrollTop = document.body.scrollTop;
   var scrollQ = scrollTop/1250;
 
-  for (var i = 0, leng =items.length; i < leng; i++) {
+  for (var i = 0; i < leng; i++) {
     var phase = Math.sin(scrollQ + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
