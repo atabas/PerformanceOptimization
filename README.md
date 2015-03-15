@@ -16,6 +16,7 @@
 - stored scroll position and value to prevent being calculated everytime
 - stored document.querySelectorAll calculations in one query/variable where possible to prevent expensive calculations everytime
 - Made changes for updatePositions and scroll to prevent document selector being called everytime
+- Minified javascript
 
 ### Resources used:
 - http://compressjpeg.com/
