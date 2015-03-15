@@ -5,6 +5,19 @@
 - Framerate for pizza.html: should be 60fps
 - Comments in main.js
 
+### Optimizations for pagespeed (index.html):
+- Compressed images
+- Inline CSS instead of style.css
+- Used async for analytics and perfmatters.js; moved google analytics code to perfmatters.js
+- Used media query for print.css so that it doesn't have to load except when printing
+
+### Optimizations for FPS :
+
+
+### Resources used:
+- http://compressjpeg.com/
+- Pagespeed Insights
+
 ### Getting started
 Some useful tips to help you get started:
 
